@@ -1,0 +1,26 @@
+{
+  "name": "codemedic_analyzer",
+  "version": "1.0.0",
+  "description": "Scans raw programming code blocks locally via open-weight AI to pinpoint bugs and vulnerabilities.",
+  "input_schema": {
+    "type": "object",
+    "properties": {
+      "code": {
+        "type": "string",
+        "description": "The raw source code snippet requiring static safety analysis."
+      }
+    },
+    "required": [
+      "code"
+    ]
+  },
+  "output_schema": {
+    "type": "object",
+    "properties": {
+      "analysis": {
+        "type": "string",
+        "description": "Structured markdown text outputting bugs, security gaps, and targeted code remediation."
+      }
+    }
+  }
+}
